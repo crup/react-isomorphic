@@ -2,8 +2,8 @@
 import * as React from 'react';
 import { Helmet } from 'react-helmet-async';
 import { Link, Route, Switch } from 'react-router-dom';
-import favicon from '../shared/assets/favicon.png';
-import { ReactComponent as ReactLogo } from './assets/react.svg';
+// import favicon from '../shared/assets/favicon.png';
+// import { ReactComponent as ReactLogo } from './assets/react.svg';
 import Home from './pages/home';
 import routes from './routes';
 import css from './App.module.css';
@@ -20,10 +20,11 @@ const App = () => {
             <Helmet
                 defaultTitle="React SSR Starter – TypeScript Edition"
                 titleTemplate="%s – React SSR Starter – TypeScript Edition"
-                link={[{ rel: 'icon', type: 'image/png', href: favicon }]}
+            // link={[{ rel: 'icon', type: 'image/png', href: favicon }]}
             />
             <h1>
-                <ReactLogo className={css.reactLogo} /> React + Express – SSR Starter – TypeScript
+                {/* <ReactLogo className={css.reactLogo} />  */}
+                React + Express – SSR Starter – TypeScript
                 Edition
             </h1>
             <Switch>
