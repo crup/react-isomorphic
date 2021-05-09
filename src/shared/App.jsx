@@ -16,7 +16,7 @@ import css from './App.module.css';
 const App = () => {
     return (
         // <Suspense fallback={<div>Loading</div>}>
-        <div className={css.wrapper}>
+        <div>
             <Helmet
                 defaultTitle="React SSR Starter – TypeScript Edition"
                 titleTemplate="%s – React SSR Starter – TypeScript Edition"
