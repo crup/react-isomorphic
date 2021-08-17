@@ -1,21 +1,12 @@
-// import React, { Suspense } from 'react';
 import * as React from 'react';
 import { Helmet } from 'react-helmet-async';
 import { Link, Route, Switch } from 'react-router-dom';
-// import favicon from '../shared/assets/favicon.png';
-// import { ReactComponent as ReactLogo } from './assets/react.svg';
 import Home from './pages/home';
 import routes from './routes';
 import css from './App.module.css';
 
-// Does not yet work with server side rendering:
-// const Home = React.lazy(() => import('./pages/Home'));
-// const Page1 = React.lazy(() => import('./pages/Page-1'));
-// const Page2 = React.lazy(() => import('./pages/Page-2'));
-
 const App = () => {
     return (
-        // <Suspense fallback={<div>Loading</div>}>
         <div>
             <Helmet
                 defaultTitle="React SSR Starter – TypeScript Edition"
@@ -23,9 +14,7 @@ const App = () => {
             // link={[{ rel: 'icon', type: 'image/png', href: favicon }]}
             />
             <h1>
-                {/* <ReactLogo className={css.reactLogo} />  */}
-                React + Express – SSR Starter – TypeScript
-                Edition
+                React + Express – SSR Starter
             </h1>
             <Switch>
                 <Route exact path={routes.home} component={Home} />
@@ -44,7 +33,6 @@ const App = () => {
                 </li>
             </ul>
         </div>
-        // </Suspense>
     );
 };
 
